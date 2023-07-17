@@ -1,0 +1,315 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsBook"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Name="MainWindow1" x:Class="StudentsBook.MainWindow"
+        mc:Ignorable="d"
+        Title="Electronic Student's book" Height="900" Width="1200" MaxWidth="1500" MinWidth="1200" MinHeight="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="679*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="3" Margin="0,2,-1,2">
+            <TabItem x:Name="HomePageTab" Header="🏠 Home page" Width="150" Height="32" FontSize="16">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/english-language-learning-dark-background копия.png"/>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="EnglishTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="235" Width="1043" Text="English text " Margin="0,40,0,0" FontSize="18" TextAlignment="Justify" Background="#B2FFFFFF" FontWeight="DemiBold" Padding="10,5,10,5"/>
+                    <TextBlock x:Name="RussianTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="318" Width="1043" Text="Русский текст" FontSize="18" TextAlignment="Justify" Background="#B2FFFFFF" FontWeight="DemiBold" Padding="10,5,10,5" Margin="0,298,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ReadingTab" Header="📖 Reading" Width="150" FontSize="16" Height="32" VerticalAlignment="Bottom">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/english-language-learning-dark-background копия.png"/>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="349*"/>
+                        <ColumnDefinition Width="546*"/>
+                    </Grid.ColumnDefinitions>
+                    <ScrollViewer Grid.ColumnSpan="2" Margin="66,10,67,10">
+                        <StackPanel Height="2291" Width="1044">
+                            <Image Source="/New_Challenges_3_SB (1)_12-1.png" Width="1020" Height="1652" VerticalAlignment="Top"/>
+                            <Label Content="Match the paragraphs (1-5) with titles(a-e):" Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="438" HorizontalAlignment="Left"/>
+                            <DockPanel Height="36" Margin="0,10,0,0">
+                                <Label Content="Paragraph 1 " FontSize="18" Background="#B2FFFFFF" Width="153"></Label>
+                                <ComboBox x:Name="keyComboBox1" Width="233" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBoxItem Content="a) fees"/>
+                                    <ComboBoxItem Content="b) free-time activities"/>
+                                    <ComboBoxItem Content="c) houses"/>
+                                    <ComboBoxItem Content="d) general information"/>
+                                    <ComboBoxItem Content="e) the first school"/>
+                                </ComboBox>
+                            </DockPanel>
+                            <DockPanel Height="36" Margin="0,4,0,0">
+                                <Label Content="Paragraph 2" FontSize="18" Background="#B2FFFFFF" Width="153"></Label>
+                                <ComboBox x:Name="keyComboBox2" Width="233" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBoxItem Content="a) fees"/>
+                                    <ComboBoxItem Content="b) free-time activities"/>
+                                    <ComboBoxItem Content="c) houses"/>
+                                    <ComboBoxItem Content="d) general information"/>
+                                    <ComboBoxItem Content="e) the first school"/>
+                                </ComboBox>
+                            </DockPanel>
+                            <DockPanel Height="36" Margin="0,4,0,0">
+                                <Label Content="Paragraph 3" FontSize="18" Background="#B2FFFFFF" Width="153"></Label>
+                                <ComboBox x:Name="keyComboBox3" Width="233" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBoxItem Content="a) fees"/>
+                                    <ComboBoxItem Content="b) free-time activities"/>
+                                    <ComboBoxItem Content="c) houses"/>
+                                    <ComboBoxItem Content="d) general information"/>
+                                    <ComboBoxItem Content="e) the first school"/>
+                                </ComboBox>
+                            </DockPanel>
+                            <DockPanel Height="36" Margin="0,4,0,0">
+                                <Label Content="Paragraph 4" FontSize="18" Background="#B2FFFFFF" Width="153"></Label>
+                                <ComboBox x:Name="keyComboBox4" Width="233" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBoxItem Content="a) fees"/>
+                                    <ComboBoxItem Content="b) free-time activities"/>
+                                    <ComboBoxItem Content="c) houses"/>
+                                    <ComboBoxItem Content="d) general information"/>
+                                    <ComboBoxItem Content="e) the first school"/>
+                                </ComboBox>
+                            </DockPanel>
+                            <DockPanel Height="36" Margin="0,4,0,0">
+                                <Label Content="Paragraph 5" FontSize="18" Background="#B2FFFFFF" Width="153"></Label>
+                                <ComboBox x:Name="keyComboBox5" Width="233" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBoxItem Content="a) fees"/>
+                                    <ComboBoxItem Content="b) free-time activities"/>
+                                    <ComboBoxItem Content="c) houses"/>
+                                    <ComboBoxItem Content="d) general information"/>
+                                    <ComboBoxItem Content="e) the first school"/>
+                                </ComboBox>
+                            </DockPanel>
+                            <Button Height="40" Width="193" DockPanel.Dock="Bottom" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,12,0,0" Click="Button_Click" Content="Check results" Padding="5,5,5,5" ScrollViewer.CanContentScroll="True" FontSize="18" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="DictionaryTab" Header="📕 Dictionary" Width="150" FontSize="16" Height="32">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="251*"/>
+                        <ColumnDefinition Width="944*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <ImageBrush/>
+                    </Grid.Background>
+                    <DataGrid x:Name="DictionaryDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" ColumnWidth="220" IsSynchronizedWithCurrentItem="False" Margin="10,0,225,0" Grid.ColumnSpan="2" IsReadOnly="True"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TestingTab" Header="🗹 Testing" Width="150" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" Height="32">
+                <Grid Background="#FFE5E5E5">
+                    <DockPanel LastChildFill="False"/>
+                    <ScrollViewer x:Name="TestingTabScrollViewer" Margin="66,10,67,10">
+                        <StackPanel Height="2291" Width="1044">
+                            
+                            <Label x:Name="TestingInfoLabel" Content="Другие вкладки будут заблокированы, начать тестирование?" Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
+                            <Button x:Name="TestingStartButton" Height="40" Width="193" DockPanel.Dock="Bottom" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,12,0,0" Content="Начать тестирование" Padding="5,5,5,5" ScrollViewer.CanContentScroll="True" FontSize="18" HorizontalAlignment="Left" Click="TestingStartButton_Click"/>
+
+
+                            <StackPanel x:Name="TestingStackPanel" Margin="0,5,0,0">
+                                
+                                <Label Content="Complete the words in the sentences." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="1. We have our chemistry lessons in a l_________" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox1" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) laboratory"/>
+                                        <ComboBoxItem Content="b) lakeshores"/>
+                                        <ComboBoxItem Content="c) lampshells"/>
+                                        <ComboBoxItem Content="d) laserscope"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="2. Our school has got three tennis c_____" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox2" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) cables"/>
+                                        <ComboBoxItem Content="b) canons"/>
+                                        <ComboBoxItem Content="c) courts"/>
+                                        <ComboBoxItem Content="d) capers"/>
+                                    </ComboBox>
+                                </DockPanel>
+                                
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="3. There is a football p____" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox3" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) packs"/>
+                                        <ComboBoxItem Content="b) pitch"/>
+                                        <ComboBoxItem Content="c) pages"/>
+                                        <ComboBoxItem Content="d) pulls"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="4. I get books from school l______" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox4" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) letters"/>
+                                        <ComboBoxItem Content="b) lemures"/>
+                                        <ComboBoxItem Content="c) ladders"/>
+                                        <ComboBoxItem Content="d) library"/>
+                                    </ComboBox>
+                                </DockPanel>
+                                
+                                <!-- Section 2 -->
+                                <Label Content="Complete the verbs in the sentences." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="5. I want to take ________ photography." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox5" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) part in"/>
+                                        <ComboBoxItem Content="b) up"/>
+                                        <ComboBoxItem Content="c) care of"/>
+                                        <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="6. When I'm ill, my mom takes ________ me." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox6" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) part in"/>
+                                        <ComboBoxItem Content="b) up"/>
+                                        <ComboBoxItem Content="c) care of"/>
+                                        <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="7. I'd like to take ________ karate or judo." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox7" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) part in"/>
+                                        <ComboBoxItem Content="b) up"/>
+                                        <ComboBoxItem Content="c) care of"/>
+                                        <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="8. When my neighbour is away, I take ________ of his dog." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox8" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) part in"/>
+                                        <ComboBoxItem Content="b) up"/>
+                                        <ComboBoxItem Content="c) care of"/>
+                                        <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="9. He'd like to take ________ in the concert." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox9" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) part in"/>
+                                        <ComboBoxItem Content="b) up"/>
+                                        <ComboBoxItem Content="c) care of"/>
+                                        <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="10. The school dance takes ________ in the gym." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox10" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) part in"/>
+                                        <ComboBoxItem Content="b) up"/>
+                                        <ComboBoxItem Content="c) care of"/>
+                                        <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <!-- Section 3 -->
+                                <Label Content="Choose the correct word." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="11-12. Would you ________" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox11" Width="88" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-1400,0,0,0">
+                                        <ComboBoxItem Content="a) love"/>
+                                        <ComboBoxItem Content="b) like"/>
+                                    </ComboBox>
+                                    <Label Content="to ________" FontSize="18" Background="#B2FFFFFF" Width="103" Margin="-1200,0,0,0"></Label>
+                                    <ComboBox x:Name="testComboBox12" Width="102" Margin="-1150,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) go"/>
+                                        <ComboBoxItem Content="b) going"/>
+                                    </ComboBox>
+                                    <Label Content="to the school dance this weekend?" FontSize="18" Background="#B2FFFFFF" Width="330" Margin="-850,0,0,0"></Label>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="13-18. Thanks, but i'd ________" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox13" Width="106" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-1325,0,0,0">
+                                        <ComboBoxItem Content="a) rather"/>
+                                        <ComboBoxItem Content="b) prefer"/>
+                                    </ComboBox>
+                                    <Label Content="go to the cinema.I love ________" FontSize="18" Background="#B2FFFFFF" Width="241" Margin="-1000,0,0,0"></Label>
+                                    <ComboBox x:Name="testComboBox14" Width="100" Margin="-760,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) go"/>
+                                        <ComboBoxItem Content="b) going"/>
+                                    </ComboBox>
+                                    <Label Content="out with my friends but I prefer ________" FontSize="18" Background="#B2FFFFFF" Width="330" Margin="-340,0,0,0"></Label>
+                                    <ComboBox x:Name="testComboBox15" Width="150" Margin="-155,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) watch"/>
+                                        <ComboBoxItem Content="b) watching"/>
+                                    </ComboBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Content="films to ___________________________ .I" FontSize="18" Background="#B2FFFFFF" Width="197"/>
+                                    <ComboBox x:Name="testComboBox16" Width="102" Margin="-155,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) dance"/>
+                                        <ComboBoxItem Content="b) dancing"/>
+                                    </ComboBox>
+                                    <ComboBox x:Name="testComboBox17" Width="145" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-10,0,0,0">
+                                        <ComboBoxItem Content="a) don't stand"/>
+                                        <ComboBoxItem Content="b) can't"/>
+                                    </ComboBox>
+                                    <ComboBox x:Name="testComboBox18" Width="102" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="10,0,0,0">
+                                        <ComboBoxItem Content="a) be"/>
+                                        <ComboBoxItem Content="b) being"/>
+                                    </ComboBox>
+                                    <Label Content="in noisy places." FontSize="18" Background="#B2FFFFFF" Width="152" Margin="-430,0,0,0"/>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="19-20. I ________________________ mind that - I love __________________________ to clubs and discos!" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox19" Width="93" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-1560,0,0,0">
+                                        <ComboBoxItem Content="a) don't"/>
+                                        <ComboBoxItem Content="b) can't"/>
+                                    </ComboBox>
+                                    <ComboBox x:Name="testComboBox20" Width="97" Margin="-1230,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) go"/>
+                                        <ComboBoxItem Content="b) going"/>
+                                    </ComboBox>
+                                </DockPanel>
+                                <Button Height="42" Width="327" FontSize="18" Margin="0,10,0,0" FontWeight="Bold" Click="Button_Click_1">Завершить тестирование?</Button>
+                            </StackPanel> 
+                            
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="QuitTab" Header="" Width="150" FontSize="16" PreviewMouseDown="TabItem_PreviewMouseDown" Content="" AutomationProperties.HelpText="Выход из приложения">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFFF7474" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <TabItem.Template>
+                    <ControlTemplate>
+                        <Button Content="Quit"/>
+
+                    </ControlTemplate>
+                </TabItem.Template>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="english-language-learning-dark-background копия.png" />
+    <None Remove="New_Challenges_3_SB %281%29_12-1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="english-language-learning-dark-background копия.png" />
+    <Resource Include="New_Challenges_3_SB (1)_12-1.png" />
+  </ItemGroup>
+
+</Project>

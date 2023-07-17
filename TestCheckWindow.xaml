@@ -1,0 +1,18 @@
+﻿<Window x:Name="TestCheckWindow1" x:Class="StudentsBook.TestCheckWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentsBook"
+        mc:Ignorable="d"
+        Title="Reading check results" Height="250" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="TestingCheckTextBlock" x:FieldModifier="public" HorizontalAlignment="Left" Margin="47,26,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="93" Width="306" Grid.ColumnSpan="2" TextAlignment="Center" LineHeight="18" FontSize="16"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="158,153,0,0" VerticalAlignment="Top" Width="84" Height="29" Click="Button_Click" IsCancel="True"/>
+
+    </Grid>
+</Window>
